@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Download, ArrowRight } from "lucide-react";
 import { HERO_CONTENT } from "../constants";
+import myImage from "../assets/biruk.jpg";
 
 const Hero: React.FC = () => {
   return (
@@ -43,13 +44,17 @@ const Hero: React.FC = () => {
             >
               Contact Me <ArrowRight size={20} />
             </a>
-            <a
-              href="/resume.pdf"
-              download="Biruk_Maru_Resume.pdf"
+            <button
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1TxAReEAF26c15uuDRpeohbj_RzJR3iAi/view?usp=drive_link",
+                  "_blank"
+                )
+              }
               className="flex items-center gap-2 px-8 py-4 bg-slate-800/50 text-white border border-slate-700 font-semibold rounded-lg hover:bg-slate-800 transition-colors hover:border-primary/50"
             >
               Download Resume <Download size={20} />
-            </a>
+            </button>
           </div>
         </motion.div>
 
@@ -63,7 +68,7 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-2xl rotate-6 opacity-20 blur-sm"></div>
             <div className="absolute inset-0 bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-2xl">
               <img
-                src="https://picsum.photos/seed/biruk/800/1000"
+                src={myImage}
                 alt="Biruk Maru"
                 className="w-full h-full object-cover opacity-80 hover:scale-105 transition-transform duration-700"
               />

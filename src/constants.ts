@@ -5,13 +5,12 @@ import {
   Terminal, 
   Github, 
   Linkedin, 
-  Twitter, 
-  Mail 
+
 } from 'lucide-react';
 import type { SkillCategory, ExperienceItem, Project, SocialLink } from './types';
 
 export const HERO_CONTENT = {
-  name: "Solomon Asefa",
+  name: "Biruk Maru",
   role: "Software Engineer",
   headline: "Building Intelligent Solutions for the Real World.",
   subheadline: "I bridge the gap between complex AI theories and impactful production software. Specializing in national-scale applications and digital innovation.",
@@ -108,22 +107,12 @@ export const PROJECTS_DATA: Project[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     platform: "GitHub",
-    url: "https://github.com",
+    url: "https://github.com/birukmaru",
     icon: Github
   },
   {
     platform: "LinkedIn",
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/biruk-maru/",
     icon: Linkedin
-  },
-  {
-    platform: "Twitter",
-    url: "https://twitter.com",
-    icon: Twitter
-  },
-  {
-    platform: "Email",
-    url: `mailto:${HERO_CONTENT.email}`,
-    icon: Mail
   }
 ];
