@@ -1,118 +1,169 @@
-import { 
-  Code2, 
-  Brain, 
-  Database, 
-  Terminal, 
-  Github, 
-  Linkedin, 
+import {
+  Code2,
+  Brain,
+  Database,
+  Terminal,
+  Github,
+  Linkedin,
+} from "lucide-react";
+import type {
+  SkillCategory,
+  ExperienceItem,
+  Project,
+  SocialLink,
+} from "./types";
 
-} from 'lucide-react';
-import type { SkillCategory, ExperienceItem, Project, SocialLink } from './types';
+import aiAutomationImg from "./assets/ai_automation.png";
+import ashamLoleImg from "./assets/asham_lole.png";
+import epaImg from "./assets/gazette_plus.png";
 
 export const HERO_CONTENT = {
   name: "Biruk Maru",
-  role: "Software Engineer",
-  headline: "Building Intelligent Solutions for the Real World.",
-  subheadline: "I bridge the gap between complex AI theories and impactful production software. Specializing in national-scale applications and digital innovation.",
-  email: "birukmaru12@gmail.com" // Placeholder
+  role: "Software Developer & AI Engineer",
+  headline:
+    "Results-driven AI & Software Engineer — 4+ years delivering scalable applications.",
+  subheadline:
+    "Specialized in AI-powered architectures (LangChain, RAG, agentic workflows) and full-stack web (React, Next.js, Node.js) & Mobile development (Flutter).",
+  email: "birukmaru12@gmail.com",
+  location: "Addis Ababa, Ethiopia",
 };
 
 export const ABOUT_CONTENT = {
-  description1: "I am a passionate Software Engineer specializing in the Artificial Intelligence stream. My journey is defined by a relentless pursuit of innovation—turning raw data into actionable intelligence and complex problems into elegant software solutions.",
-  description2: "With experience ranging from individual contributions to leading development for national-level projects in Ethiopia, I bring a blend of technical expertise and strategic thinking. I thrive in collaborative environments where code meets creativity to solve genuine human problems."
+  description1:
+    "Results-driven AI & Software Engineer with 4+ years of experience building scalable, production-grade systems. I specialize in AI and machine learning architectures including LangChain implementations, RAG pipelines, autonomous agent workflows, and ML pipeline development that transform static applications into adaptive, reasoning systems. In addition to Ethiopia, I have been working in USA-based companies.",
+  description2:
+    "Skilled in full-stack web development (React, Next.js, Node.js/NestJS) and cross-platform mobile development (Flutter), with experience delivering end-to-end solutions from documentation and design to deployment. My mobile development expertise includes work on national-level projects. I collaborate across cross-functional teams to deliver solutions that drive real business impact.",
 };
 
 export const SKILLS_DATA: SkillCategory[] = [
   {
     category: "AI & Machine Learning",
-    skills: ["Python", "TensorFlow", "PyTorch", "NLP", "Computer Vision", "Scikit-learn", "Data Analysis"],
-    icon: Brain
+    skills: [
+      "Python",
+      "LangChain",
+      "RAG Pipelines",
+      "Agentic Workflows",
+      "PyTorch",
+      "NLP",
+      "Computer Vision",
+    ],
+    icon: Brain,
   },
   {
     category: "Frontend Development",
-    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "HTML5/CSS3", "Framer Motion"],
-    icon: Code2
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML5/CSS3"],
+    icon: Code2,
   },
   {
     category: "Backend & Architecture",
-    skills: ["Node.js", "FastAPI", "Django", "PostgreSQL", "MongoDB", "Docker", "Microservices"],
-    icon: Database
+    skills: [
+      "Node.js",
+      "NestJS",
+      "FastAPI",
+      "PostgreSQL",
+      "Firebase",
+      "Docker",
+      "Microservices",
+    ],
+    icon: Database,
   },
   {
     category: "Tools & DevOps",
-    skills: ["Git", "Linux", "AWS", "Google Cloud", "CI/CD", "Jira", "Agile Methodologies"],
-    icon: Terminal
+    skills: [
+      "Git",
+      "CI/CD",
+      "n8n (Automation)",
+      "Firebase",
+      "Vector Databases",
+    ],
+    icon: Terminal,
   },
 ];
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
   {
     id: "exp1",
-    role: "Software Engineer",
-    company: "Ethiopian Press Agency",
-    period: "2023 - Present",
-    description: "Leading the digital transformation of one of the nation's oldest media houses.",
+    role: "AI Developer",
+    company: "Ingenious Digital LLC",
+    period: "09/2025 - Present",
+    location: "Fort Lauderdale, USA",
+    description:
+      "Designed and implemented AI automation workflows and intelligent agents to enhance product capabilities. Served as a Flutter mobile developer and launched multiple apps from scratch.",
     achievements: [
-      "Developed and deployed national-level applications serving thousands of daily users.",
-      "Integrated AI-driven content categorization systems to streamline news delivery.",
-      "Collaborated with cross-functional teams to modernize legacy infrastructure."
-    ]
+      "Built n8n-based automation pipelines for multi-step workflows.",
+      "Integrated agentic LLM workflows to augment product features.",
+      "Developed and shipped 3+ cross-platform Flutter applications.",
+    ],
   },
   {
     id: "exp2",
-    role: "Full Stack Developer (Intern to Junior)",
-    company: "Tech Solutions Ltd",
-    period: "2021 - 2023",
-    description: "Worked on diverse web development projects in an agile environment.",
+    role: "Flutter Developer",
+    company: "Ethiopian Press Agency",
+    period: "01/2025 - 02/2026",
+    location: "Addis Ababa, Ethiopia",
+    description:
+      "Led end-to-end development of bilingual (English/Amharic) digital content modules for the EPA Integrated News Management System.",
     achievements: [
-      "Contributed to the backend architecture of a high-traffic e-commerce platform.",
-      "Optimized database queries reducing load times by 40%.",
-      "Mentored junior interns in React and Python best practices."
-    ]
-  }
+      "Delivered bilingual content modules and deployed to production.",
+      "Collaborated with cross-functional teams for documentation, testing, and maintenance.",
+    ],
+  },
+  {
+    id: "exp3",
+    role: "Web Developer",
+    company: "Asham Lole Delivery Service",
+    period: "02/2024 - 05/2025",
+    location: "Addis Ababa, Ethiopia",
+    description:
+      "Designed and implemented delivery management systems to streamline operations and track deliveries.",
+    achievements: [
+      "Built end-to-end delivery tracking and order management applications.",
+      "Improved operational workflows and reduced manual dispatch overhead.",
+    ],
+  },
 ];
 
 export const PROJECTS_DATA: Project[] = [
   {
     id: "proj1",
-    title: "EPA Digital News Platform",
-    description: "A comprehensive digital news distribution system for the Ethiopian Press Agency. Features real-time updates, multimedia support, and an AI-powered recommendation engine.",
-    techStack: ["React", "Node.js", "PostgreSQL", "AI/ML Integration"],
-    imageUrl: "https://picsum.photos/800/600?grayscale",
-    isFeatured: true
+    title: "EPA Integrated News Management System",
+    description:
+      "Bilingual (English/Amharic) content modules and a scalable news management platform developed for the Ethiopian Press Agency.",
+    techStack: ["Flutter", "Orchard CMS", "PostgreSQL"],
+    imageUrl: epaImg,
+    isFeatured: true,
+    playStoreUrl: "",
   },
   {
     id: "proj2",
-    title: "Amharic Sentiment Analyzer",
-    description: "An NLP model designed to analyze and categorize sentiment in Amharic text, aiding in social listening and automated moderation.",
-    techStack: ["Python", "PyTorch", "NLP", "FastAPI"],
-    imageUrl: "https://picsum.photos/800/601?grayscale"
+    title: "Asham Lole Delivery Management",
+    description:
+      "A suite of delivery and order-management applications built to optimize dispatch, tracking, and delivery workflows.",
+    techStack: ["React", "Node.js", "Firebase"],
+    imageUrl: ashamLoleImg,
+    siteUrl: "",
+    githubUrl: "",
   },
   {
     id: "proj3",
-    title: "Smart Traffic Management System",
-    description: "A computer vision prototype for detecting traffic congestion and optimizing signal timings in real-time.",
-    techStack: ["OpenCV", "YOLO", "Python"],
-    imageUrl: "https://picsum.photos/800/602?grayscale"
+    title: "AI Automation & Mobile Apps (Ingenious Digital)",
+    description:
+      "Automation pipelines, intelligent agents, and cross-platform Flutter apps developed for client projects — includes n8n automation and LLM integrations.",
+    techStack: ["n8n", "LangChain", "Flutter", "React", "Node.js"],
+    imageUrl: aiAutomationImg,
+    githubUrl: "",
   },
-  {
-    id: "proj4",
-    title: "Portfolio V1",
-    description: "The first iteration of my personal brand website, focusing on minimalism and performance.",
-    techStack: ["HTML", "SASS", "JavaScript"],
-    imageUrl: "https://picsum.photos/800/603?grayscale"
-  }
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     platform: "GitHub",
     url: "https://github.com/birukmaru",
-    icon: Github
+    icon: Github,
   },
   {
     platform: "LinkedIn",
     url: "https://www.linkedin.com/in/biruk-maru/",
-    icon: Linkedin
-  }
+    icon: Linkedin,
+  },
 ];

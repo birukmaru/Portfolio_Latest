@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+// import { ExternalLink, Github } from "lucide-react";
 import { PROJECTS_DATA } from "../constants";
 
 const Projects: React.FC = () => {
@@ -85,14 +85,14 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
 
-                <div className="flex items-center gap-4 mt-auto">
+                {/* <div className="flex items-center gap-4 mt-auto">
                   <button className="flex items-center gap-2 text-sm font-semibold text-white hover:text-primary transition-colors">
                     <Github size={18} /> Code
                   </button>
                   <button className="flex items-center gap-2 text-sm font-semibold text-white hover:text-primary transition-colors">
                     <ExternalLink size={18} /> Live Demo
                   </button>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           ))}

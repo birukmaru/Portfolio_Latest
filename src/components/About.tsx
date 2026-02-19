@@ -25,13 +25,13 @@ const About: React.FC = () => {
 
             <div className="mt-10 grid grid-cols-2 gap-6">
               <div className="p-4 bg-slate-900 rounded-lg border border-slate-800">
-                <h3 className="text-3xl font-bold text-primary mb-1">3+</h3>
+                <h3 className="text-3xl font-bold text-primary mb-1">4+</h3>
                 <p className="text-sm text-slate-500 uppercase tracking-wider">
                   Years Experience
                 </p>
               </div>
               <div className="p-4 bg-slate-900 rounded-lg border border-slate-800">
-                <h3 className="text-3xl font-bold text-secondary mb-1">15+</h3>
+                <h3 className="text-3xl font-bold text-secondary mb-1">35+</h3>
                 <p className="text-sm text-slate-500 uppercase tracking-wider">
                   Projects Completed
                 </p>

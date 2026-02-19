@@ -8,6 +8,9 @@ export interface Project {
   techStack: string[];
   imageUrl: string;
   link?: string;
+  siteUrl?: string;
+  githubUrl?: string;
+  playStoreUrl?: string;
   isFeatured?: boolean;
 }
 
@@ -18,6 +21,7 @@ export interface ExperienceItem {
   period: string;
   description: string;
   achievements: string[];
+  location?: string;
 }
 
 export interface SkillCategory {
