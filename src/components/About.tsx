@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ABOUT_CONTENT } from "../constants";
+import birukImg from "../assets/about me.png";
 
 const About: React.FC = () => {
   return (
@@ -44,9 +45,9 @@ const About: React.FC = () => {
               <div className="absolute inset-0 border-2 border-slate-800 rounded-full animate-[spin_10s_linear_infinite] border-t-primary border-r-transparent border-b-transparent border-l-transparent opacity-20"></div>
               <div className="absolute inset-4 border-2 border-slate-800 rounded-full animate-[spin_15s_linear_infinite_reverse] border-t-secondary border-r-transparent border-b-transparent border-l-transparent opacity-20"></div>
               <img
-                src="https://picsum.photos/seed/code/600/600?grayscale"
-                alt="Coding Environment"
-                className="w-full h-full object-cover rounded-full p-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500"
+                src={birukImg}
+                alt="Biruk Maru"
+                className="w-full h-full object-cover rounded-full p-8 transition-all duration-500"
               />
             </div>
           </div>
