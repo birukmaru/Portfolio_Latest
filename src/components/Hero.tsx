@@ -47,8 +47,8 @@ const Hero: React.FC = () => {
             <button
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1TxAReEAF26c15uuDRpeohbj_RzJR3iAi/view?usp=drive_link",
-                  "_blank"
+                  "https://drive.google.com/file/d/1sdSgRUk1NdLrDuKSdiKVivFgCEWV8Mtb/view?usp=sharing",
+                  "_blank",
                 )
               }
               className="flex items-center gap-2 px-8 py-4 bg-slate-800/50 text-white border border-slate-700 font-semibold rounded-lg hover:bg-slate-800 transition-colors hover:border-primary/50"
