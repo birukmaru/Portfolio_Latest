@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+
+# IDE
+.idea
+.vscode
+
+# Git
+.git
+.gitignore
+
+# Logs
+*.log
+
+# Misc
+.DS_Store
+*.md
+!README.md
+
+# Test/CI
+coverage
+.github
